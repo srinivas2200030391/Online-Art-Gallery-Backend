@@ -34,7 +34,7 @@ public class JwtService {
 
     public String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
         Date issuedAt = new Date(System.currentTimeMillis());
-        Date expiration = new Date(System.currentTimeMillis() + 1000 * 60 * 60); // 1 hour
+        Date expiration = new Date(System.currentTimeMillis() + 1000*60*60); // 1 hr
 
         // Optional: Add logging
         System.out.println("Token issued at: " + issuedAt);

@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/curators")
-@CrossOrigin
+@CrossOrigin(origins = {"http://localhost:5173","https://imaginariumtheatre.vercel.app/"})
 public class CuratorController {
 
     @Autowired
