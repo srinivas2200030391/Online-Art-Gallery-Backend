@@ -54,9 +54,9 @@ public class VisitorController {
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
 
             int otp = (int) (Math.random() * 99999); // Random OTP generation
-            helper.setFrom(emailRequest.getEmail());
+            helper.setTo(emailRequest.getEmail());
             helper.setSubject(emailRequest.getSubject());
-            helper.setTo("vasus4990@gmail.com");
+            helper.setFrom("vasus4990@gmail.com");
 
             String htmlContent =
                     "<h3>Contact Form Details</h3>" +
