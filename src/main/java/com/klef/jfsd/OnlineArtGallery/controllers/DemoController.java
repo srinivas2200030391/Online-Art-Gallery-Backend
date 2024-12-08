@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = {"http://localhost:5173","https://imaginariumtheatre.vercel.app/"})
 public class DemoController {
 
     @Autowired
